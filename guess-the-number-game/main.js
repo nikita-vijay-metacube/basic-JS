@@ -39,6 +39,7 @@ function checkIfRight(){
                 var element = document.getElementById("correctGuess");
                 var checkIfRightButton = document.getElementById("checkIfRightButton");
                 checkIfRightButton.setAttribute("disabled", true);
+                document.getElementById("correctNumber").innerHTML = (number)
             }else{
                 var element = document.getElementById("wrongGuessed");
                 if(x > number){
