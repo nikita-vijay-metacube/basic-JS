@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="main.js"></script>
+        <div class="header">
+            <h1>Guess The Number Game</h1>
+            <h4> We will generate a number. Think and guess according to the hints provided, You have 10 chances to guess the number. If you succeed in guessing the number, you Win!</h4>
+        </div>
+    </head>
+    <body>        
+        <p>You have <b id="chancesLeft"></b> chances left!</p>
+        <div class="btn-group mt-10">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+
+        <div class="mt-20">
+            <input type ="number" id="guessedNumber">
+            <button type="button" id = "checkIfRightButton" onclick="checkIfRight()">Check</button>
+            <button type="button" id = "restartGame" onclick="restartGame()">Restart Game</button>
+        </div>
+
+        <div id="correctGuess" class="d-none"> Bingo, You Guessed Right!! <p>You Won!!</p></div>
+        <div id="wrongGuessed" class="d-none"> You Guessed Wrong, try again!</div>
+        <div id="answerReveal" class="d-none"></div>
+    </body>
+</html>

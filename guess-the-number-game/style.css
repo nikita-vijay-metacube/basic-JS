@@ -1,0 +1,98 @@
+.header{
+    background-color: #ededed;
+    padding-bottom: 20px;
+    color: #a9540b;
+}
+body{
+text-align: center;
+}
+
+h1{
+    text-decoration: underline;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.btn-group {
+    width: auto;
+    text-align: center;
+}
+.btn-group div {
+    display: inline-flex;
+    width: 10px;
+    background-color: #ba92f0; /* Green background */
+    border: 1px solid rgb(56, 83, 114); /* Green border */
+    color: white; /* White text */
+    padding: 5px 15px; /* Some padding */
+    /* float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group div:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
+.disabled {
+    background-color: #8f5b5b!important;
+}
+.d-none{
+    display: none;
+}
+
+input{
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #c1b5b5;
+}
+
+button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #c1b5b5;
+}
+
+#checkIfRightButton{
+    color: azure;
+    background-color: blue;
+}
+
+#restartGame{
+    background: #5a3e3e;
+    color: #f3eacb;
+}
+
+#correctGuess {
+    margin-top:10px; 
+    color:green;
+    font-size: 22px;
+}
+
+#wrongGuessed {
+    margin-top:10px; 
+    color:#ff0000
+}
+
+#answerReveal {
+    margin-top:10px; 
+    color: blue
+}
+
+#chancesLeft{
+    color: #ededed;
+    padding: 1px 4px;
+    background-color: rgb(37, 4, 4);
+}
